@@ -31,7 +31,7 @@ function getcurrentIP(){
 async function processCSV(repairInfo) {
     
     var repairCost = 0;
-    var boolInStock = true;
+    var boolInStock = true
 
 if(repairInfo == undefined){
     return;
