@@ -1,0 +1,181 @@
+
+
+#navButton{
+	display:none !important;
+}
+:root{
+
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+}
+/*disable scrollbar on body*/
+body::-webkit-scrollbar{
+	display:none;
+	    -webkit-appearance: none;
+}
+html, body{
+	    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -moz-user-drag: none;
+    -khtml-user-drag: none;
+    -webkit-user-drag: none;
+
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+      overflow-y:auto;
+
+}
+
+#head{
+height:156px; /*perfect height. 28px between top and bottom of logo and bottom of chrome and bottom border of header respectively. */
+width:100%;
+position:relative;
+border-bottom:1px solid black;
+margin-bottom:5%;
+font-size:1.6em;
+text-align:center;
+}
+#head h1{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+font-weight:bold;
+position:absolute;
+width:100%;
+
+}
+#page-wrapper{
+	position:relative;
+
+}
+a{
+	color:black;
+}
+
+/*for select-model.html*/
+#repair-price{
+	color:black;
+	font-weight:bold;
+	border-bottom:solid black 1px;
+}
+#phone{
+	    -moz-user-select: all;
+    -khtml-user-select: all;
+    -webkit-user-select: all;
+    user-select: all;
+
+		color:black;
+	font-weight:bold;
+	border-bottom:solid black 1px;
+		-moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;  
+}
+#selection-wrapper{
+
+text-align:center;
+
+overflow:scroll;
+
+}
+#selection-wrapper::-webkit-scrollbar{
+display:none;
+}
+#selection-wrapper table{
+
+	display:inline-block;
+	width:300px;
+	height:300px;
+user-select:none;
+margin:30px;
+}
+#selection-wrapper tbody{
+
+	width:150px;
+	height:300px;
+	
+}
+#selection-wrapper td.c{
+
+}
+#selection-wrapper td.empty{
+
+}
+#selection-wrapper td.empty-c{
+width:125px;
+}
+#selection-wrapper td{
+
+}
+#selection-wrapper .model-txt{
+font-size:1.4em;
+position:flex;
+
+}
+#selection-wrapper .model{
+	width:112px;
+}
+
+#selection-wrapper .model-img{
+	width:80px;
+	height:160px;
+	overflow:hidden;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -moz-user-drag: none;
+    -khtml-user-drag: none;
+    -webkit-user-drag: none;
+    user-drag: none;
+    display: block;
+}
+
+/*hover transition for like, everything*/
+#selection-wrapper .model-txt, 
+.label-repair{
+	border-bottom:1px solid black;
+
+	-moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;  
+}
+
+
+#selection-wrapper .model-txt:hover,
+#selection-wrapper .model-txt:focus,
+.label-repair:hover,
+.label-repair:focus
+#phone:hover,
+#phone:focus
+{
+	border-bottom: 1px solid rgb(247, 147, 26);
+	cursor:pointer;
+}
+
+
+/*for select-repair.html*/
+.label-repair{
+	border-bottom:1px black solid;
+}
+#repair-availability{
+	border-bottom:1px black solid;
+}
+
+#label-wrapper{
+	font-size:1.4em;
+	text-align:left;	
+	margin:auto;
+	display:inline-block;
+	line-height:1.6em;
+	user-select:none;
+}
+#btn-schedule{
+	user-select:none;
+margin:15px;
+}
