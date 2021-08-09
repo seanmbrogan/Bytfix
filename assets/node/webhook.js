@@ -1,3 +1,4 @@
+//listens for pushs via GH webhook, pulling on each instance. 
 const repo = '/var/www/bytfix'
 const secret = require("./.secret.json").secret;
 const http = require("http")
