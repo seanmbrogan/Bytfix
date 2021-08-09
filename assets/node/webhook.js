@@ -13,5 +13,5 @@ http.createServer(function (req, res) {
             console.log("pulling... ");
         }
     });
-    res.end();
-}).listen(8080);
+    res.end()
+}).listen(8080)
