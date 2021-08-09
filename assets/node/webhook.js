@@ -2,6 +2,7 @@ const repo = '/var/www/bytfix'
 const secret = require("./.secret.json").secret;
 const http = require("http")
 const crypto = require("crypto")
+const { exec } = require("child_process");
 http.createServer(function (req, res) {
     req.on('data', function(chunk) {
         
