@@ -1,7 +1,7 @@
 const repo = '/var/www/bytfix'
 const secret = require("./.secret.json");
-const https = require("https")
-https.createServer(function (req, res) {
+const http = require("http")
+http.createServer(function (req, res) {
     req.on('data', function(chunk) {
         
         let sig = "sha1=" + crypto.createHmac('sha1', secret).update(chunk.toString()).digest('hex');
@@ -12,4 +12,4 @@ https.createServer(function (req, res) {
         }
     });
     res.end()
-}).listen(8080)
+}).listen(8080);
