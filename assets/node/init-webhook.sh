@@ -1,0 +1,1 @@
+nohup node /srv/www/MyUserAccount/server/server.js &
