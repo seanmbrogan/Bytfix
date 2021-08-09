@@ -1,6 +1,7 @@
 const repo = '/var/www/bytfix'
 const secret = require("./.secret.json");
 const http = require("http")
+const crypto = require("crypto")
 http.createServer(function (req, res) {
     req.on('data', function(chunk) {
         
