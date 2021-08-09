@@ -1,5 +1,5 @@
 const repo = '/var/www/bytfix'
-const secret = require("./secret.json");
+const secret = require("./.secret.json");
 const http = require("http")
 console.log(secret.secret);
 http.createServer(function (req, res) {
