@@ -3,6 +3,7 @@ const secret = require("./.secret.json");
 const http = require("http")
 http.createServer(function (req, res) {
     req.on('data', function(chunk) {
+        
         let sig = "sha1=" + crypto.createHmac('sha1', secret).update(chunk.toString()).digest('hex');
 
         if (req.headers['x-hub-signature'] == sig) {
@@ -10,5 +11,5 @@ http.createServer(function (req, res) {
             console.log("pulling... ");
         }
     });
-    res.end();
-}).listen(8080);
+    res.end()
+}).listen(8080)
