@@ -18,7 +18,7 @@
 
 			<!-- Header -->
 				<header id="header" class="alt">
-					<h1 id="logo"><a href="index.html">
+					<h1 id="logo"><a href="index">
 						<img id="logo-img-transparent" src="images/logo -transparent.png"></img>
 						<img id="logo-img" src="images/logo.png"></img>
 					</a></h1>
@@ -30,15 +30,15 @@
 							<li class="submenu">
 								<a href="#">FAQ</a>
 								<ul>
-									<li><a href="why-us.html">Why choose us?</a></li>
-									<li><a href="alternative-repair.html">Have a non-iPhone Repair?</a></li>
-									<li><a href="contact.html">Contact Us</a></li>
+									<li><a href="why-us">Why choose us?</a></li>
+									<li><a href="alternative-repair">Have a non-iPhone Repair?</a></li>
+									<li><a href="contact">Contact Us</a></li>
 									
 
 								</ul>a
 							</li>
 						
-							<li><a href="select-model.html" class="button primary">Repair My iPhone</a></li>
+							<li><a href="select-model" class="button primary">Repair My iPhone</a></li>
 							
 						</ul>
 	-->
@@ -63,7 +63,7 @@
 							<p>Fast. Local. No B.S.<p>
 						<footer>
 							<ul class="buttons stacked">
-								<li><a href="select-model.html" class="button fit scrolly">Repair My iPhone</a></li>
+								<li><a href="select-model" class="button fit scrolly">Repair My iPhone</a></li>
 							</ul>
 						</footer>
 
@@ -231,7 +231,7 @@
 					</header>
 					<footer>
 						<ul class="buttons">
-							<li><a href="select-model.html" class="button primary">Repair My iPhone</a></li>
+							<li><a href="select-model" class="button primary">Repair My iPhone</a></li>
 
 						</ul>
 					</footer>

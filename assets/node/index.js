@@ -1,8 +1,8 @@
 var url = require('url');
 var fs = require('fs');
-const { http, https } = require('./follow-redirects');
-
-var currentIP=8080;
+const { http, https } = require('follow-redirects');
+const sslPath = '/etc/letsencrypt/live/bytfix.com-0001/'
+var currentIP=2727;
 
 var sheetURL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTTwEiYtuorkNLlZpvkgmCZ4609AHg_HJY3K0CKk6xqhqyVzrdEqsHzlvwCZ1Y2zy7gkjwWx1Sz-mkD/pub?output=csv';
 //time between sheet refreshes in minutes        
@@ -109,9 +109,12 @@ function handleRequest(req, res) {
     });
 
 }
+const options = {
+    key: fs.readFileSync(sslPath+'privkey.pem'),
+    cert: fs.readFileSync(sslPath+'cert.pem')
+  };
 
-
-var serverCSV = http.createServer(handleRequest);
+var serverCSV = https.createServer(options,handleRequest);
 serverCSV.listen(currentIP);
 serverCSV.on('error', function(error) {
     console.log("\x1b[31m%s\x1b[0m", 'ERROR: Only one instance allowed');
