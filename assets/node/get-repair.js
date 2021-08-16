@@ -5,7 +5,7 @@ var repairArr = [getModel(),false,false,false,getColor()];
 
 
 //TODO: create location finde
-var STRlocation = "Hidden Valley Lake";
+var STRlocation = " Hidden Valley Lake";
 
 jQuery(document).ready(function() { 
  var contentHeight = jQuery(window).height();
@@ -21,8 +21,8 @@ jQuery(document).ready(function() {
 
     $window.on('load', function() {
       
-$(".location").text(STRlocation);
-$(".location").css("font-weight","bolder");
+$(".userLocation").text(STRlocation);
+$(".userLocation").css("font-weight","bolder");
 
 });
 })(jQuery);
