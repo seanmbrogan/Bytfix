@@ -1,5 +1,5 @@
 id,Screen B - Stock#,Screen W - Stock#,Battery - Stock#,Back Glass - Stock#,Screen - Part$,Battery - Part$,Back Glass - Part$,Screen - Repair$,Battery - Repair$,Back Glass - Repair$,
-6,0,0,0,0,11,0,-,80,35,0,
+6,0,1,0,0,11,0,-,80,35,0,
 6+,0,1,0,0,14,0,-,80,35,0,
 6S,0,1,0,0,13,0,-,80,35,0,
 6S+,0,0,0,0,16,0,-,80,35,0,6/6s not same screen
