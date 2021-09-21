@@ -11,7 +11,7 @@ jQuery(document).ready(function() {
  var contentHeight = jQuery(window).height();
  var footerHeight = jQuery('#footer').height();
  var footerTop = jQuery('#footer').position().top + footerHeight;
- if (footerTop < contentHeight) { 
+ if (footerTop < contentHeight) {
      jQuery('#footer').css('margin-top', 10+ (contentHeight - footerTop) + 'px');
 
    }
@@ -63,7 +63,7 @@ if(repairAvailability=='true'){
 function getCSV(nodeURL){   
   var CSVreq = new XMLHttpRequest();
   CSVreq.open("GET", nodeURL, true);
-        
+  
   CSVreq.setRequestHeader("RepairInfo", getRepairInfo());
 CSVreq.send();
 CSVreq.onreadystatechange = function() {
