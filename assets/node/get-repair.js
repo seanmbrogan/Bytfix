@@ -34,7 +34,7 @@ getCSV(nodeURL);
 
     console.log(response);
 sessionStorage.setItem("repairInfo", response);
-window.location.href = "schedule-repair.html";
+window.location.href = "schedule-repair";
 }
 function getrepairInfo(){
 var repairInfo = sessionStorage.getItem("repairInfo").split(',');
