@@ -1,7 +1,7 @@
 var url = require('url');
 var fs = require('fs');
 const { http, https } = require('follow-redirects');
-const sslPath = '/etc/letsencrypt/live/coinchew.com/'
+const sslPath = '/etc/letsencrypt/live/seanbrogan.org/'
 var currentIP=2727;
 
 var sheetURL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTTwEiYtuorkNLlZpvkgmCZ4609AHg_HJY3K0CKk6xqhqyVzrdEqsHzlvwCZ1Y2zy7gkjwWx1Sz-mkD/pub?output=csv';

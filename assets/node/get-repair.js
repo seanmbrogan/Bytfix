@@ -1,5 +1,5 @@
 
-var nodeURL = 'https://bytfix.com:2727' ;
+var nodeURL = 'https://seanbrogan.org:2727' ;
 
 var repairArr = [getModel(),false,false,false,getColor()];
 
